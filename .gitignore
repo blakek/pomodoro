@@ -1,0 +1,8 @@
+*.dSYM
+.vrepl*
+*.exe
+*.o
+.*.c
+*.obj
+*.pdb
+pomodoro
