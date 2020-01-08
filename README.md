@@ -49,7 +49,19 @@ If you want to see more details, here's all options at the time of writing:
 **Remember:** you can always run `pomodoro --help` to get the latest list of
 options available.
 
-## Installing
+## Install
+
+You can install using [Homebrew](https://brew.sh/) or manually build from source:
+
+### Install with Homebrew
+
+Running this in your terminal adds [my tap](https://github.com/blakek/homebrew-blakek) and installs the package:
+
+```bash
+brew tap blakek/blakek && brew install blakek/blakek/pomodoro
+```
+
+### Build from Source
 
 First, either [clone this
 repo](https://help.github.com/articles/cloning-a-repository/) or [download a zip
@@ -71,9 +83,11 @@ $ PREFIX=/custom/directory make install
 
 ## Updating
 
-Right now, the easiest way to update is to re-run the install directions. If you
-keep the repository, you can occasionally run `git pull && make install` to use
-the latest.
+If you installed using Homebrew, you can use the normal `brew upgrade` process.
+
+The easiest way to update from a source build is to re-run the install
+directions. If you keep the repository, you can occasionally run
+`git pull && make install` to build using the latest changes.
 
 ## See Also
 
