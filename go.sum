@@ -1,0 +1,4 @@
+github.com/blakek/go-notifier v0.1.0 h1:ZhB7OVgbfXWL9m919xvqCfwoSsoen4oFzVUr+m1Ozec=
+github.com/blakek/go-notifier v0.1.0/go.mod h1:vRLSkYnhnPiXD1kgtpBh6JpZDkFfVDdcn1dz7/rQObM=
+github.com/jessevdk/go-flags v1.4.0 h1:4IU2WS7AumrZ/40jfhf4QVDMsQwqA7VEHozFRrGARJA=
+github.com/jessevdk/go-flags v1.4.0/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=

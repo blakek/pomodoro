@@ -6,11 +6,6 @@ The point of pomodoro timers is to help you focus and save time. Unfortunately,
 I found myself wasting time with other tools. To fix that, I spent a few minutes
 making a simple timer for use in the terminal.
 
-⚠️ Right now, due to notifications, this is macOS-only. My plan is to work on a
-cross-platform notification system for [V](https://github.com/vlang/v). Once
-that's done, this project will be updated. Two lines can be commented out for a
-fully terminal-based system, but that's not what I want.
-
 ## Usage
 
 Here are some common ways to use the timer:
@@ -36,7 +31,13 @@ pomodoro -l
 **Start a 3 minute timer for tea:**
 
 ```bash
-pomodoro -c 3
+pomodoro -c 3m
+```
+
+**Start a 1 hour, 2 minute, 3 second timer:**
+
+```bash
+pomodoro -c 1h2m3s
 ```
 
 If you want to see more details, here's all options at the time of writing:
@@ -63,36 +64,23 @@ brew tap blakek/blakek && brew install blakek/blakek/pomodoro
 
 ### Build from Source
 
-First, either [clone this
-repo](https://help.github.com/articles/cloning-a-repository/) or [download a zip
-file](https://github.com/blakek/pomodoro/archive/master.zip).
+First, either [clone this repo](https://help.github.com/articles/cloning-a-repository/)
+or [download a zip file](https://github.com/blakek/pomodoro/archive/master.zip).
 
-Then, in a terminal open to this project's directory, run make:
-
-```
-$ make install
-```
-
-This will compile the binary and move it to a directory. The default install
-directory is `/usr/local/bin`. You can change this by setting the `PREFIX`
-variable:
+Then, in a terminal open to this project's directory, build with Go:
 
 ```
-$ PREFIX=/custom/directory make install
+$ go build
 ```
 
 ## Updating
 
 If you installed using Homebrew, you can use the normal `brew upgrade` process.
 
-The easiest way to update from a source build is to re-run the install
-directions. If you keep the repository, you can occasionally run
-`git pull && make install` to build using the latest changes.
-
-## See Also
-
-- [`vlang/v`](https://github.com/vlang/v) - The language this project is written
-  in.
+The easiest way to update from a source build is to pull the latest changes
+(e.g. `git pull`) and re-run the install directions. If you keep the
+repository, you can occasionally run `git pull && go build` to build using the
+latest changes.
 
 ## License
 
