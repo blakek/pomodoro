@@ -31,7 +31,13 @@ pomodoro -l
 **Start a 3 minute timer for tea:**
 
 ```bash
-pomodoro -c 3
+pomodoro -c 3m
+```
+
+**Start a 1 hour, 2 minute, 3 second timer:**
+
+```bash
+pomodoro -c 1h2m3s
 ```
 
 If you want to see more details, here's all options at the time of writing:
@@ -58,11 +64,10 @@ brew tap blakek/blakek && brew install blakek/blakek/pomodoro
 
 ### Build from Source
 
-First, either [clone this
-repo](https://help.github.com/articles/cloning-a-repository/) or [download a zip
-file](https://github.com/blakek/pomodoro/archive/master.zip).
+First, either [clone this repo](https://help.github.com/articles/cloning-a-repository/)
+or [download a zip file](https://github.com/blakek/pomodoro/archive/master.zip).
 
-Then, in a terminal open to this project's directory, run make:
+Then, in a terminal open to this project's directory, build with Go:
 
 ```
 $ go build
@@ -72,9 +77,10 @@ $ go build
 
 If you installed using Homebrew, you can use the normal `brew upgrade` process.
 
-The easiest way to update from a source build is to re-run the install
-directions. If you keep the repository, you can occasionally run
-`git pull && make install` to build using the latest changes.
+The easiest way to update from a source build is to pull the latest changes
+(e.g. `git pull`) and re-run the install directions. If you keep the
+repository, you can occasionally run `git pull && go build` to build using the
+latest changes.
 
 ## License
 
